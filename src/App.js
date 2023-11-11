@@ -38,7 +38,8 @@ function App() {
   const { items } = state;
 
   return (
-    <div className="app-conatiner">
+    <div className='app'>
+    <div className="app-container">
       <div className='input-container'>
         <AddItem dispatch={dispatch} />
       </div>
@@ -54,6 +55,7 @@ function App() {
           
         })}
       </div>
+    </div>
     </div>
   );
 }
