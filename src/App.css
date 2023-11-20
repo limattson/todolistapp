@@ -1,36 +1,31 @@
+@import url('https://fonts.google.com/specimen/Libre+Baskerville?query=libr');
+@import url('https://fonts.google.com/specimen/League+Spartan?query=leag');
+
+@font-face {
+  font-family: 'League Spartan';
+  src: url('https://fonts.google.com/specimen/League+Spartan?query=leag');
+}
+
+@font-face {
+  font-family: 'Libre Baskerville';
+  src: url('https://fonts.google.com/specimen/Libre+Baskerville?query=libr');
+}
 .App {
   text-align: center;
   background-color: #b8a598;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-
 .App-header {
-  background-color: #282c34;
+  background-color: #A17544;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: #efebe2;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-.app-container {
+.app-container-one {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -38,18 +33,35 @@
   background-color: #ABB0B8;
   padding: 2rem;
   border-radius: 1.2rem;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
+  max-width: 300px;
+  margin: 0 auto; 
+  text-align: center;
 }
 
-.card {
-  width: 18rem;
- border: 1px solid #ccc;
- border-radius: 5px;
- margin: 10 px;
+.app-container-two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50vw;
+  background-color: #ABB0B8;
+  padding: 2rem;
+  border-radius: 1.2rem;
+  max-width: 300px;
+  margin: 0 auto; 
+  text-align: center;
 }
 
-.card-header {
+.heading-one {
+  font-family: 'League Spartan';
+  text-transform: uppercase;
+}
+
+.heading-six {
+  font-family: 'Libre Baskerville';
+  font-style: italic;
+}
+
+.container-header {
   background-color:#c0c0c0;
   color: #000;
   padding: 10px;
@@ -57,14 +69,42 @@
   text-align: left;
 }
 
-.list-group-item {
-  padding: 10px;
-  border: 1px solid #ccc;
-  margin: 5px;
+.btn-custom {
+  color: #000;
+  border-color: secondary;
+  background: #e6e6e6;
 }
 
-.list-group-item:hover {
-  background-color: #f0f0f0;
+.btn-round {
+  border-radius: 20px;
+}
+
+.btn-custom:hover {
+  background-color: #b8a598;
+}
+
+.input-container {
+  border-radius: 20px;
+}
+
+.list-item {
+  font-family: 'Libre Baskerville', sans-serif;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  padding-top: 2px;
+  padding-bottom:2px;
+  padding-left:5px;
+  padding-right: 5px;
+  border: 1px solid #ccc;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.list-item:hover {
+  background-color: #efebe2;
 }
 
 .done {
@@ -73,14 +113,4 @@
 
 .not-done {
   color: #808080;
-}
-
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

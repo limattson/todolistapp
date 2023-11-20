@@ -12,9 +12,10 @@ const AddItem = ({dispatch}) => {
         updateInput('');
     };
     return (
-        <form onSubmit={submitHandler}>
+        <form onSubmit={submitHandler} className='app-container'>
             <input type='text' value={inputValue} onChange={handleInput} />
-            <button type='submit'>Add</button>
+            <button className='btn-custom btn-round btn-hover' type='submit'>Add
+</button>
         </form>
     );
        

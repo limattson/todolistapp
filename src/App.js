@@ -38,24 +38,25 @@ function App() {
   const { items } = state;
 
   return (
-    <div className='app'>
-    <div className="app-container">
-      <div className='input-container'>
-        <AddItem dispatch={dispatch} />
+    <div className='app-header'>
+      <div className='app'>
+        <div className='app-container'>
+          <div className='input-container'>
+            <AddItem dispatch={dispatch} />
+          </div>
+          <div className='list-container'>
+            {items.map((item) => {
+              return (
+                <ListItem
+                  key={item.id}
+                  item={item}
+                  dispatch={dispatch}
+                />
+              );
+            })}
+          </div>
+        </div>
       </div>
-      <div className='list-container'>
-        {items.map((item)=>{
-          return (
-            <ListItem
-            key={item.id}
-            item={item}
-            dispatch={dispatch}
-            />
-          );
-          
-        })}
-      </div>
-    </div>
     </div>
   );
 }
