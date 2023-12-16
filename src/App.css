@@ -10,6 +10,7 @@
   font-family: 'Libre Baskerville';
   src: url('https://fonts.google.com/specimen/Libre+Baskerville?query=libr');
 }
+
 .App {
   text-align: center;
   background-color: #b8a598;
@@ -23,6 +24,7 @@
   align-items: center;
   justify-content: center;
   color: #efebe2;
+  font-family: 'League Spartan', sans-serif;
 }
 
 .app-container-one {
@@ -52,8 +54,9 @@
 }
 
 .heading-one {
-  font-family: 'League Spartan';
+  font-family: League Spartan;
   text-transform: uppercase;
+  background-color: #ABB0B8;
 }
 
 .heading-six {
@@ -67,6 +70,7 @@
   padding: 10px;
   font-weight: bold;
   text-align: left;
+  font-family: 'Libre Baskerville', sans-serif;
 }
 
 .btn-custom {
@@ -77,6 +81,7 @@
 
 .btn-round {
   border-radius: 20px;
+  font-family: 'Libre Baskerville', sans-serif;
 }
 
 .btn-custom:hover {
@@ -85,6 +90,7 @@
 
 .input-container {
   border-radius: 20px;
+  font-family: 'Libre Baskerville', sans-serif;
 }
 
 .list-item {
@@ -101,6 +107,7 @@
   margin-bottom: 2px;
   margin-left: 5px;
   margin-right: 5px;
+  font-family: 'Libre Baskerville', sans-serif;
 }
 
 .list-item:hover {

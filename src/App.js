@@ -38,8 +38,8 @@ function App() {
   const { items } = state;
 
   return (
-    <div className='app-header'>
-      <div className='app'>
+    <div className='app'>
+      <div className='app-header'>
         <div className='app-container'>
           <div className='input-container'>
             <AddItem dispatch={dispatch} />
