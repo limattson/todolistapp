@@ -41,7 +41,7 @@ function App() {
   return (
     <div className='app'>
       <Header className='app-header' />
-      <div className='app-container'>
+      <div className='app-container-one'>
         <div className='input-container'>
           <AddItem dispatch={dispatch} />
         </div>

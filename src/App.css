@@ -11,39 +11,27 @@
   src: url('https://fonts.google.com/specimen/Libre+Baskerville?query=libr');
 }
 
-.App {
-  text-align: center;
-  background-color: #b8a598;
+body {
+  background-color: #efebe2;
 }
 
-.App-header {
-  background-color: #A17544;
-  min-height: 100vh;
+.app-header {
+  background-color: #b3926c;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 0.5 rem;
   color: #efebe2;
   font-family: 'League Spartan', sans-serif;
+  display: block;
+  border-radius: 1.1 rem;
 }
 
 .app-container-one {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 50vw;
-  background-color: #ABB0B8;
-  padding: 2rem;
-  border-radius: 1.2rem;
-  max-width: 300px;
-  margin: 0 auto; 
-  text-align: center;
-}
-
-.app-container-two {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
   width: 50vw;
   background-color: #ABB0B8;
   padding: 2rem;
@@ -56,12 +44,17 @@
 .heading-one {
   font-family: League Spartan;
   text-transform: uppercase;
-  background-color: #ABB0B8;
+  justify-content: center;
+  text-align: center;
+  display: block;
 }
 
-.heading-six {
+.heading-four {
   font-family: 'Libre Baskerville';
   font-style: italic;
+  justify-content: center;
+  text-align: center;
+  display: block;
 }
 
 .container-header {
@@ -105,8 +98,8 @@
   border: 1px solid #ccc;
   margin-top: 2px;
   margin-bottom: 2px;
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-left: 3px;
+  margin-right: 3px;
 }
 
 .list-item:hover {
