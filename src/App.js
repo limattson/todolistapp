@@ -3,6 +3,7 @@ import { v4 as uuid } from 'uuid';
 import AddItem from './components/AddItem';
 import ListItem from './components/ListItem';
 import './App.css';
+import Header from './components/Header';
 
 
 const initialState = {
@@ -39,22 +40,21 @@ function App() {
 
   return (
     <div className='app'>
-      <div className='app-header'>
-        <div className='app-container'>
-          <div className='input-container'>
-            <AddItem dispatch={dispatch} />
-          </div>
-          <div className='list-container'>
-            {items.map((item) => {
-              return (
-                <ListItem
-                  key={item.id}
-                  item={item}
-                  dispatch={dispatch}
-                />
-              );
-            })}
-          </div>
+      <Header className='app-header' />
+      <div className='app-container'>
+        <div className='input-container'>
+          <AddItem dispatch={dispatch} />
+        </div>
+        <div className='list-container'>
+          {items.map((item) => {
+            return (
+              <ListItem
+                key={item.id}
+                item={item}
+                dispatch={dispatch}
+              />
+            );
+          })}
         </div>
       </div>
     </div>

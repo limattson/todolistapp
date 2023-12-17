@@ -107,17 +107,8 @@
   margin-bottom: 2px;
   margin-left: 5px;
   margin-right: 5px;
-  font-family: 'Libre Baskerville', sans-serif;
 }
 
 .list-item:hover {
   background-color: #efebe2;
-}
-
-.done {
-  text-decoration: line-through;
-}
-
-.not-done {
-  color: #808080;
 }
